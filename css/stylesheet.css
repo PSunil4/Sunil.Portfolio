@@ -1,0 +1,16 @@
+header {
+    background-image: url(http://spanchal.me/images/sunset.jpeg);
+    /* vh is a viewport height so we dont have to playaround with HTML
+        and Body */
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
