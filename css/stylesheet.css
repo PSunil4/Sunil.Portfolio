@@ -1,5 +1,9 @@
-header {
-    background-image: url(http://spanchal.me/images/sunset.jpeg);
+body {
+  margin: 0px;
+}
+
+.landingpage {
+    background-image: url(../images/yosemite-night.jpg);
     /* vh is a viewport height so we dont have to playaround with HTML
         and Body */
     height: 100vh;
@@ -13,4 +17,105 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin-bottom: 2%;
+}
+
+/* VERTICAL TIMELINE  */
+
+.timeline {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  /* set the width of the pipeline */
+  width: 10px;
+  /* Change the Color of the "pipeline" */
+  background: lightseagreen;
+  /* Move pipeline to the left */
+  left: 45px;
+  /* Change the border to give the responsive feel */
+  border: 1px solid #eee;
+  margin: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.timeline > li {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline > li:before, .timeline > li:after {
+  display: table;
+  content: " ";
+}
+.timeline > li:after {
+  clear: both;
+}
+
+/* Style for the timeline items */
+.timeline > li > .timeline-item {
+  background: #fff;
+  color: #555;
+  margin-left: 70px;
+  margin-right: 15px;
+  padding: 5px;
+  position: relative;
+}
+
+/* Creates a Line under the Title*/
+.timeline > li > .timeline-item > .timeline-header {
+  margin: 0;
+  color: #555;
+  border-bottom: 10px solid #f4f4f4;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+/*Space between title and content */
+.timeline > li > .timeline-item > .timeline-body,
+.timeline > li > .timeline-item > .timeline-footer {
+  padding: 10px;
+}
+
+/* Titlebars  */
+.timeline > li.time-label > span {
+  font-weight: 600;
+  padding: 10px;
+  width: 250px;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.timeline > li > .fa,
+.timeline > li > .glyphicon,
+.timeline > li > .ion {
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  line-height: 45px;
+  font-size: 25px;
+  position: absolute;
+  color: black;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  left: 10px;
+  top: 0px;
 }
