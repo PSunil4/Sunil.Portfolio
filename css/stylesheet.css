@@ -7,115 +7,103 @@ body {
     /* vh is a viewport height so we dont have to playaround with HTML
         and Body */
     height: 100vh;
-    background-size: cover;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    
+    /* Parallax  */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    margin-bottom: 2%;
+    position: relative;
+
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
-/* VERTICAL TIMELINE  */
-
-.timeline {
-  margin: 0 0 20px 0;
-  padding: 0;
-  list-style: none;
+/* Education style */
+.edu-body hr {
+  margin: 0 0 0 0;
+  width: 400px;
+}
+.edu-body h4, ul {
+  margin-left: 60px;
 }
 
+.education {
+  height: 400px;
+  background-color: #f6f6f6;
+  border-bottom: 2px solid black;
+}
 
-.timeline:before {
-  content: '';
+/* Style for Experience Tab */
+
+.experiences {
+  height: 650px;
+  background-color: #403E41;
+  color: white;
+}
+
+.experiences hr {
+  margin: 0 0 0 0px;
+  margin-bottom: 10px;
+}
+
+.exp-body {
+    height: 40px;
+    background:#249991;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.exp-body:before {
+  content: "";
+  border-right: 10px solid #249991;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
   position: absolute;
-  top: 0px;
-  bottom: 0;
-  /* set the width of the pipeline */
-  width: 10px;
-  /* Change the Color of the "pipeline" */
-  background: lightseagreen;
-  /* Move pipeline to the left */
-  left: 45px;
-  /* Change the border to give the responsive feel */
-  border: 1px solid #eee;
-  margin: 0;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  top:0;
+  left: -10px;
+  z-index: 100;
 }
 
-.timeline > li {
-  position: relative;
-  margin-bottom: 30px;
+.exp-body:after {
+  content: "";
+  border-right: 10px solid #403E41;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  top:0;
+  right: 0;
+  z-index: 1;
 }
 
-.timeline > li:before, .timeline > li:after {
-  display: table;
-  content: " ";
-}
-.timeline > li:after {
-  clear: both;
+.skills {
+  height: 600px;
+  background-color: #f6f6f6;
 }
 
-/* Style for the timeline items */
-.timeline > li > .timeline-item {
-  background: #fff;
-  color: #555;
-  margin-left: 70px;
-  margin-right: 15px;
-  padding: 5px;
-  position: relative;
+.progress {
+  margin-top: 20px;
 }
 
-/* Creates a Line under the Title*/
-.timeline > li > .timeline-item > .timeline-header {
-  margin: 0;
-  color: #555;
-  border-bottom: 10px solid #f4f4f4;
-  padding: 5px;
-  font-size: 16px;
-  line-height: 1.1;
+.portfolio {
+  height: 300px;
+  background-color: #403E41;
+  color: white;
 }
 
-/*Space between title and content */
-.timeline > li > .timeline-item > .timeline-body,
-.timeline > li > .timeline-item > .timeline-footer {
-  padding: 10px;
-}
-
-/* Titlebars  */
-.timeline > li.time-label > span {
-  font-weight: 600;
-  padding: 10px;
-  width: 250px;
-  display: inline-block;
-  background-color: #fff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.timeline > li > .fa,
-.timeline > li > .glyphicon,
-.timeline > li > .ion {
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
-  width: 50px;
+footer {
+  background-color: #000000;
+  color: white;
   height: 50px;
-  font-size: 15px;
-  line-height: 45px;
-  font-size: 25px;
-  position: absolute;
-  color: black;
-  background: white;
-  border-radius: 50%;
-  text-align: center;
-  left: 10px;
-  top: 0px;
 }
