@@ -2,6 +2,48 @@ body {
   margin: 0px;
 }
 
+/* NAVBAR CUSTOM */
+.navbar-custom {
+  background: none;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+.navbar-custom .navbar-brand {
+  color: white;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: white;
+}
+
+
+.navbar-custom .navbar-nav li a {
+  color: white;
+}
+
+.navbar-custom .navbar-nav li a:hover {
+  color: #18BC9C;
+}
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+  color: white;
+}
+.navbar-custom .navbar-nav li.active a {
+  color: white;
+  background: #18BC9C;
+}
+.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,
+.navbar-custom .navbar-nav li.active a:active {
+  color: white;
+  background: #18BC9C;
+}
+
+/* END */
 .landingpage {
     background-image: url(../images/yosemite-night.jpg);
     /* vh is a viewport height so we dont have to playaround with HTML
@@ -23,27 +65,40 @@ body {
     font-family: Verdana, Tahoma, sans-serif;
 }
 
+.landingpage .name {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4em;
+}
+
+.landingpage .sub-name {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
 /* Education style */
+.education {
+  background-color: #f6f6f6;
+  margin-bottom: 50px;
+}
+
+
 .edu-body hr {
   margin: 0 0 0 0;
   width: 400px;
 }
+
 .edu-body h4, ul {
   margin-left: 60px;
 }
 
-.education {
-  height: 400px;
-  background-color: #f6f6f6;
-  border-bottom: 2px solid black;
-}
-
 /* Style for Experience Tab */
-
 .experiences {
-  height: 650px;
   background-color: #403E41;
   color: white;
+  margin-bottom: 20px;
 }
 
 .experiences hr {
@@ -62,7 +117,6 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 20px;
-
 }
 
 .exp-body:before {
@@ -87,23 +141,46 @@ body {
   z-index: 1;
 }
 
+/* STYLE FOR SKILLS */
+
 .skills {
-  height: 600px;
   background-color: #f6f6f6;
+  margin-bottom: 50px;
 }
 
 .progress {
   margin-top: 20px;
 }
 
+/* STYLE PORTFOLIO */
 .portfolio {
-  height: 300px;
   background-color: #403E41;
-  color: white;
+  color: #249991;
+  margin-bottom: 50px;
+}
+.portfolio h1 a {
+  float: right;
 }
 
-footer {
-  background-color: #000000;
-  color: white;
-  height: 50px;
+.contacts {
+  position: relative;
 }
+
+.contacts .resume {
+  width: 500px;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+
+
+/* START LIGHT */

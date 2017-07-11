@@ -7,7 +7,9 @@
 	<meta charset="UTF-8" />
 	<!-- Provide a desciption of your website-->
 	<meta name="desciption" content="Project Showcase" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="true">
 	<!-- help search engine find your website-->
 	<meta name="keywords" content="sunil panchal sunilpanchal spanchal personal portfolio" />
 	<script src="https://use.fontawesome.com/e8653c4577.js"></script>
@@ -26,19 +28,59 @@
 </head>
 
 <body>
+	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html#top">Sunil Panchal</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Education</a>
+                    </li>
+					<li class="page-scroll">
+                        <a href="#portfolio">Experiences</a>
+                    </li>
+					<li class="page-scroll">
+                        <a href="#portfolio">Skills</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
 	<header class="landingpage">
-		<h1> SUNIL PANCHAL </h1>
-		<h4> DEVELOPER </h4>
+		<p> Site Currently Under Construction </p>
+		<h1 class="name"> SUNIL PANCHAL </h1>
+		<h4 class="sub-name"> Software Engineer </h4>
 	</header>
 
 	<section class="education">
 		<div class="container">
-			<div class="row row-centered pos">
+			<div class="row-fluid">
 				<div class="edu-head">
-					<h1> Education </h1>
+					<h2> Education </h2>
+					<hr>
 				</div>
 				<div class="edu-body">
-					<div class="col-lg-6 col-md-4 col-xs-12 col-centered">
+					<div class="col-lg-6 col-md-4 col-sm-10 col-centered">
 						<h3> Master of Science, Computer Science </h3>
 						<hr>
 						<p> <img src="images/csula.png" alt="CSULA Logo" style="width:50px;height:50px;"> California State University, Los Angeles,
@@ -73,9 +115,9 @@
 
 	<section class="experiences">
 		<div class="container">
-			<div class="row row-centered">
+			<div class="row-fluid">
 				<div class="exp-head">
-					<h1> Experiences </h1>
+					<h2> Experiences </h2>
 				</div>
 				<div class="col-lg-4 col-md-4 col-xs-12 col-centered">
 					<span class="exp-body"> September, 2016 - May, 2017 </span>
@@ -122,106 +164,135 @@
 
 	<section class="skills">
 		<div class="container">
-			<h1> Skills </h1>
-			<div class="progress">
-				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-				aria-valuemax="100" style="width:80%">
-					80% (Java)
+			<div class="row-fluid">
+				<h2> Skills </h2>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+					 aria-valuemax="100" style="width:80%">
+						80% (Java)
+					</div>
 				</div>
-			</div>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-				aria-valuemax="100" style="width:80%">
-					80% (J2EE)
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+					 aria-valuemax="100" style="width:80%">
+						80% (J2EE)
+					</div>
 				</div>
-			</div>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-				aria-valuemax="100" style="width:70%">
-					70% (Spring / Hibernate)
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+					 aria-valuemax="100" style="width:70%">
+						70% (Spring / Hibernate)
+					</div>
 				</div>
-			</div>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-				aria-valuemax="100" style="width:70%">
-					70% ( MySQL, PostgreSQL, MongoDB)
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+					 aria-valuemax="100" style="width:70%">
+						70% ( MySQL, PostgreSQL, MongoDB)
+					</div>
 				</div>
-			</div>
-			<br />
-			<h2> PROFESSIONAL SKILLS </h2>
-			<div class="clearfix">
-				<div class="row row-centered">
-					<div class="col-lg-4 col-md-4 col-xs-12 col-centered">
-						<h4> Communication / Interpersonal </h4>
-						<div class="c100 p90 green">
-							<span>90%</span>
-							<div class="slice">
-								<div class="bar"></div>
-								<div class="fill"></div>
+				<br />
+				<h2> PROFESSIONAL SKILLS </h2>
+				<div class="clearfix">
+					<div class="row row-centered">
+						<div class="col-lg-4 col-md-4 col-sm-12 col-centered">
+							<h4> Communication / Interpersonal </h4>
+							<div class="c100 p90 green">
+								<span>90%</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-xs-12 col-centered">
-						<h4> Quick Learner </h4>
-						<div class="c100 p95 orange">
-							<span>95%</span>
-							<div class="slice">
-								<div class="bar"></div>
-								<div class="fill"></div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-centered">
+							<h4> Quick Learner </h4>
+							<div class="c100 p95 orange">
+								<span>95%</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-xs-12 col-centered">
-						<h4>Leadership</h4>
-						<div class="c100 p80">
-							<span>80%</span>
-							<div class="slice">
-								<div class="bar"></div>
-								<div class="fill"></div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-centered">
+							<h4>Leadership</h4>
+							<div class="c100 p80">
+								<span>80%</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
 							</div>
 						</div>
+
 					</div>
-
-            </div>
-
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<section class="portfolio">
 		<div class="container">
-			<div class="row row-centered">
-				<h1> Project Showcase </h1>
+			<div class="row-fluid">
+				<h2> Project Showcase <a href="https://github.com/PSunil4?tab=repositories" target="_blank"> 
+				<i class="fa fa-github fa-lg" aria-hidden="true"></i> </a>
+				</h2>
+
 				<div class="row">
 					<div class="col-md-3 portfolio-item">
-						<a href="#">
-							<img class="img-responsive" src="http://placehold.it/750x450" alt="">
-						</a>
+						<a href="http://gapp-sunil.njs.jelastic.vps-host.net/systemuser/login.html" class="portfolio-link" data-toggle="modal" target="_blank">
+                        	<img src="images/gapp.png" class="img-responsive" alt="Cabin" >
+                   		</a>
 					</div>
 					<div class="col-md-3 portfolio-item">
-						<a href="#">
-							<img class="img-responsive" src="http://placehold.it/750x450" alt="">
-						</a>
+						<a href="http://walklessgrocery.byethost7.com/wp/" class="portfolio-link" data-toggle="modal" target="_blank">
+                        	<img src="images/walkless.png" class="img-responsive" alt="Cabin" >
+                   		</a>
 					</div>
-					<div class="col-md-3 portfolio-item">
-						<a href="#">
-							<img class="img-responsive" src="http://placehold.it/750x450" alt="">
-						</a>
-					</div>
-					<div class="col-md-3 portfolio-item">
-						<a href="#">
-							<img class="img-responsive" src="http://placehold.it/750x450" alt="">
-						</a>
-					</div>
-        		</div>
+				</div>
 			</div>
 		</div>
-	</section>	
-	<footer>
-		<p> &copy; 2017 - Sunil Panchal</p>
-	</footer>
-</body>
 
+	</section>
+	<section class="contacts">
+		<div class="container">
+			<div class="row-fluid">
+				<h2>Get in touch</h2>
+				<div class="col-lg-6 col-md-4 col-xs-12 col-centered">
+					<h3> Contact </h3>
+					<form>
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label col-form-label-lg">Your Email </label>
+							<div class="col-md-10">
+								<input type="email" class="form-control form-control-lg" id="email" placeholder="xyz@abc.com">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label col-form-label-lg">First Name </label>
+							<div class="col-md-10">
+								<input type="text" class="form-control form-control-lg" id="fname" placeholder="Firstname">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label col-form-label-lg">Last Name </label>
+							<div class="col-md-10">
+								<input type="text" class="form-control form-control-lg" id="lname" placeholder="Lastname">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label col-form-label-lg"> Message </label>
+							<div class="col-md-10">
+								<textarea class="form-control" id="msg" rows="8"></textarea>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary pull-right">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
 </html>
